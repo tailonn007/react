@@ -1,0 +1,11 @@
+﻿.cabecalho { position: sticky; z-index: 10; top: 0; display: flex; min-height: 70px; align-items: center; justify-content: space-between; gap: 24px; padding: 11px clamp(20px, 7vw, 100px); border-bottom: 1px solid #e8ded7; background: #fffdfaed; backdrop-filter: blur(15px); }
+.cabecalho-marca { display: inline-flex; align-items: center; gap: 10px; color: #241c1e; font-size: 16px; font-weight: 800; text-decoration: none; letter-spacing: -.03em; }
+.cabecalho-marca strong { color: #91384f; }
+.marca-s { display: grid; width: 34px; height: 34px; place-items: center; border: 1px solid #91384f; color: #91384f; font-family: Georgia, serif; font-size: 19px; }
+.cabecalho-nav { display: flex; align-items: center; gap: 8px; }
+.cabecalho-nav button { border: 0; cursor: pointer; font: inherit; font-size: 11px; font-weight: 700; }
+.nav-link { padding: 10px 13px; color: #6e6262; background: transparent; }
+.nav-link:hover, .nav-link.ativo { color: #91384f; }
+.nav-cta { display: inline-flex; align-items: center; gap: 8px; margin-left: 7px; padding: 11px 14px; color: #fff; background: #91384f; transition: background .18s; }
+.nav-cta:hover { background: #72283c; }
+@media(max-width:560px) { .cabecalho { align-items: flex-start; flex-direction: column; padding: 13px 18px; gap: 9px; } .cabecalho-nav { width: 100%; justify-content: space-between; gap: 2px; } .nav-link { padding: 9px 5px; font-size: 10px !important; } .nav-cta { margin-left: 2px; padding: 9px 10px; font-size: 10px !important; } }

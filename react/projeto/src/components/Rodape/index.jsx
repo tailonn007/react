@@ -1,14 +1,10 @@
-import {Link} from 'react-router-dom';
-import './Rodape.css';
+﻿import './styles.css';
 
-function Rodape() {
+export default function Rodape() {
   return (
-    <footer>
-      <p>
-        © 2026 - Meu Projeto. Todos os direitos reservados.
-      </p>
+    <footer className="rodape">
+      <span><strong>Fashion Brasil</strong> · Casting e oportunidades</span>
+      <span>Conectando marcas a novos talentos.</span>
     </footer>
   );
 }
-
-export default Rodape;
